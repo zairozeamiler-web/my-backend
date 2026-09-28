@@ -1,6 +1,6 @@
 const express = require('express'); // Import Express
 const app = express();              // Create an Express app
-const PORT = 3000;                  // Set the server port
+const PORT = process.env.PORT || 3000;                 // Set the server port
 const mysql = require('mysql2');    // Import MySQL
 
 // MySQL connection
